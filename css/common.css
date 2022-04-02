@@ -22,3 +22,24 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -15px;
+  margin-top: -15px
+}
+
+.card {
+  margin-left: 15px;
+ margin-top: 15px;
+ flex-basis: calc((100% - 45px)/ 3);
+}

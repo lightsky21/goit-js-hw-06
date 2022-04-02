@@ -16,7 +16,7 @@ const images = [
 const galleryEl = document.querySelector('.gallery');
 
 const  makeImageCardMarkup = ({ url, alt }) => {
- return `<li class= "card"> <img src="${url}" alt="${alt}"> </li>`;
+ return `<li class= "card"> <img src="${url}" alt="${alt} "> </li>`;
 }
 
 const imageCardsMarkup = images.map(makeImageCardMarkup).join('');
