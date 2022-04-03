@@ -2,7 +2,10 @@ const inputEl = document.querySelector('#name-input');
 const spanOutput = document.querySelector('#name-output');
 
 function onInputElInput(event) {
-    if ( inputEl.value === '') {
+    const inputElValue = inputEl.value.trim();
+    
+     
+    if (inputElValue === '') {
         spanOutput.textContent = 'Anonymous';
     } else {spanOutput.textContent = event.currentTarget.value;}
     
