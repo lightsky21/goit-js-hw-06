@@ -10,8 +10,12 @@ function onInputValidationElBlur(event) {
     //      inputValidationEl.classList.add('valid')
     //  } else {inputValidationEl.classList.add('invalid')}
     if (inputValidationElValue.length === Number(inputValidationElDataLength)) {
-         inputValidationEl.classList.add('valid')
-     } else {inputValidationEl.classList.add('invalid')}
+        inputValidationEl.classList.add('valid');
+        inputValidationEl.classList.remove('invalid');
+    } else {
+        inputValidationEl.classList.add('invalid');
+        inputValidationEl.classList.remove('valid');
+    }
 
 }
 
